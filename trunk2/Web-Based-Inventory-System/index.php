@@ -7,6 +7,9 @@
     <body>
         <?php
         // put your code here
+        // so this is the svn client. subversion 3rd party in netbeans.
+        // it has functionality of commiting the source code, updating , differ
+        // sample output in comitiing..
         ?>
     </body>
 </html>
