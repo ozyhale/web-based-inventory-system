@@ -65,7 +65,6 @@
             </div>
         {/if}
 
-        {*
         {if isset($pre_product_name)}
             <div id="edit-product-modal" class="modal fade hide">
                 <form class="form-horizontal" method="post">
@@ -108,8 +107,32 @@
                     </div>
                 </form>
             </div>
+
+        {elseif isset($pre_category_name)}
+            <div id="edit-category-modal" class="modal fade hide">
+                <form class="form-horizontal" method="post">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal"><i class="icon-remove"></i></button>
+                        <p class="lead">Edit Category</p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="control-group">
+                            <label class="control-label">Category Name: </label>
+                            <div class="controls">
+                                <input type="text" name="category_name" value="{$pre_category_name}">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="submit" name="edit_category">
+                            <i class="icon-save"></i> Save
+                        </button>
+                        <button class="btn" data-dismiss="modal">Cancel</button>
+                    </div>
+                </form>
+            </div>
         {/if}
-        *}
 
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
         <!--<script>window.jQuery || document.write('<script src="{$host}/js/vendor/jquery-1.8.3.min.js"><\/script>')</script>-->
@@ -119,7 +142,6 @@
         <script src="{$host}/public/js/vendor/bootbox.min.js"></script>
         <script src="{$host}/public/select2/select2.js"></script>
 
-        {*
         {if isset($pre_product_name)}
             {literal}
                 <script type="text/javascript">
@@ -130,8 +152,17 @@
                     })
                 </script>
             {/literal}
+        {elseif isset($pre_category_name)}
+            {literal}
+                <script type="text/javascript">
+                    $(document).ready(function() {
+
+                        $('#edit-category-modal').modal('show');
+
+                    })
+                </script>
+            {/literal}
         {/if}
-        *}
 
         <script src="{$host}/public/js/main.js"></script>
 

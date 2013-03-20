@@ -8,6 +8,7 @@
                 <a href="category.php">Categories</a>
             </li>
         </ul>
+
         <form class="navbar-form pull-right">
             <input type="hidden" name="action" value="search_filtering">
             <input type="text" class="span2" name="search" id="search" value="{$search_value}">
@@ -23,6 +24,7 @@
         {include file=$AddEdit_products_file}
     </div>
     <div class="span9">
+
         <table class="table table-bordered">
             <tr>
                 <th><input type="checkbox" onclick="isCheck({$rowCount_product})" id="check"> Product Name</th>
@@ -61,10 +63,3 @@
     </div>
 
 </div>
-
-
-
-
-
-
-
