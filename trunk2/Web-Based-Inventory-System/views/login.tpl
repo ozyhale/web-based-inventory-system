@@ -1,21 +1,15 @@
-<script>
-    function view_ForgotPass(){
-        
-        
-        $(document).ready(function(){ 
-        
-        
-            $("#forgotPass").toggle();
-            $("#forgotOk").toggle();
-        }); 
-    }
-</script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li>
+                <a href="#">Home</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
 <div class="row">
-    <div class="span3">
-        <img src="{$host}/public/img/title.png" />
-    </div>
-    <div class="span5">
+    <div class="span5 offset3">
         <form action="index.php?action=login" method="post" class="form-horizontal">
             <legend>Login</legend>
             <div class="control-group">
@@ -38,8 +32,6 @@
                 </div>
             </div>    
         </form>
-             
-            
     </div>
 </div>
 

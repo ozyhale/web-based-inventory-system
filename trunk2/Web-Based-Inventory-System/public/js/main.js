@@ -5,6 +5,14 @@
 /*
  * Administrator Script Functions
  */
+$(document).ready(function() {
+
+    $('#wbis-alert').modal('show');
+    
+    $('.select2').select2();
+
+});
+
 function changeVisibility(){
     var visibility = parseInt(document.getElementById("sign_visibility").value);
     if(visibility == 0){    window.location.assign("../administrator/index.php?action=addSignatoryInCharge&used_for=UnderGrad");
