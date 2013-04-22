@@ -1,5 +1,5 @@
 <?php
-require_once 'config/config.php';  //wweaweawe
+require_once 'config/config.php';  //wweaweawewwwwwwwwwwwwwew
 
 class Index extends Controller {
     private $template;
