@@ -24,17 +24,17 @@ define('PASSWORD', '');
 /*
  * Database
  */
-define('DATABASE', 'inventory_system');
+define('DATABASE', 'usep_accreditation_system');
 
 /*
  * Project Root
  */
-define('PATH', "C:/wamp/www/Web-Based-Inventory-System/");
+define('PATH', "C:/wamp/www/usep-accreditation-system/");
 
 /*
  * Host
  */
-define('HOST', "http://localhost/Web-Based-Inventory-System");
+define('HOST', "http://localhost/usep-accreditation-system");
 
 /*
  * Default Photo
